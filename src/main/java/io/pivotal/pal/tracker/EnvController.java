@@ -10,7 +10,7 @@ import java.util.Map;
 @RestController
 public class EnvController {
     private Map<String, String> env;
-
+    private String test;
     public EnvController(@Value("${port:NOT SET}") String port,
                          @Value("${memory.limit:NOT SET}") String memoryLimit,
                          @Value("${cf.instance.index:NOT SET}") String cfInstanceIndex,
